@@ -1,0 +1,25 @@
+{
+  "name": "contacts-men",
+  "version": "1.0.0",
+  "description": "A contacts application using mongodb, express, node.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/falcaoaugustos/contacts-men.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/falcaoaugustos/contacts-men/issues"
+  },
+  "homepage": "https://github.com/falcaoaugustos/contacts-men#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.12.6"
+  }
+}
