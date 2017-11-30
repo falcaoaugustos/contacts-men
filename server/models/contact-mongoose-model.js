@@ -15,8 +15,7 @@ const ContactSchema = new mongoose.Schema({
   },
   phone: {
     type: String,
-    required: true,
-    match: [/^[1-9][0-9]{9}$/, 'The value of path {PATH} ({VALUE}) is not a valid mobile number.']
+    required: true
   },
   country: {
     type: String,
