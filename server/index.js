@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const mongoUri = "localhost:27042";
+const mongoUri = "localhost:27017";
 
 mongoose.connect(mongoUri, { server: { socketOptions: { keepAlive: 1 } } });
 mongoose.connection.on('error', () => {
