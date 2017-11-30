@@ -1,4 +1,4 @@
-import Contact from '../models/contact-mongoogse-model';
+const Contact = require('../models/contact-mongoose-model');
 
 function load(req, res, next, id) {
   Contact.get(id)
@@ -54,4 +54,4 @@ function remove(req, res, next) {
     .catch(e => next(e));
 }
 
-export default { load, get, create, update, list, remove };
+module.exports = { load, get, create, update, list, remove };
