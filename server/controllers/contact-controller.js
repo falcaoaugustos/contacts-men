@@ -1,4 +1,4 @@
-const Contact = require('../models/contact-mongoose-model');
+const Contact = require('../models/contact-model');
 
 function load(req, res, next, id) {
   Contact.get(id)

@@ -12,16 +12,4 @@ router.route('/:id')
   .put(contactsController.update)
   .delete(contactsController.remove)
 
-/*
-const contacts = require('../models/contact-model');
-
-router.get('/', (req, res) => {
-  res.json(contacts);
-});
-
-router.get('/:id', (req, res) => {
-  res.json(contacts[req.params.id]);
-});
-*/
-
 module.exports = router;
