@@ -2,7 +2,7 @@ const Contact = require('../models/contact-model');
 
 function load(req, res, next, id) {
   Contact.get(id)
-    .then((contact) => {
+    .then(contact => {
       req.contact = contact;
       return next();
     })
@@ -23,7 +23,7 @@ function create(req, res, next) {
   });
 
   contact.save()
-    .then(savedUser => res.json(savedUser))
+    .then(savedContact => res.json(savedContact))
     .catch(e => next(e));
 }
 

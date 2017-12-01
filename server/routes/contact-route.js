@@ -12,4 +12,6 @@ router.route('/:id')
   .put(contactsController.update)
   .delete(contactsController.remove)
 
+router.param('id', contactsController.load)
+
 module.exports = router;
