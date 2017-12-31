@@ -1,5 +1,5 @@
 # contacts-men
-A contacts application using mongodb, express, node.
+A contacts application using mongodb, mongoose, express, node.
 
 ---
 
